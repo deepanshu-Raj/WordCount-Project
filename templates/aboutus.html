@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>About Us</title>
+    <style media="screen">
+      body{
+        background-color : #4EABFF;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="font-size:25px;">HEY THERE</h1>
+    <hr>
+    <p style="background-color: #9DF510;">This is a basic HTML webpage designed by Deepanshu Raj,currently a 3rd year
+    B.Tech U.G at MNNIT,Allahabad. The site is all about the user entering a text,in
+    the input window, and hit the count button, in response to which, a new webpage will load
+    which gives the user the information about the text that user has fed in the previous page.
+    It tells the count of total words and total distinct words present in the text entered on the previous page.
+    Moreover, It also gives the frequency of each word that is present in the text entered by the user.</p>
+    <hr>
+    <p style="background-color: #FFC300;">Hope you like our site and enjoyed using it!!.Do subscribe our page for being updated
+    with the latest development on our website.Thank You for visiting us!!:)</p>
+    <form action="{% url 'subscribe' %}">
+      <input type="submit" value="Subscribe!">
+    </form>
+    <pre style="font-size:14px;">- Have a nice day!!</pre>
+    <form action="{% url 'home' %}">
+      <input type="submit" value="Home">
+    </form>
+  </body>
+</html>

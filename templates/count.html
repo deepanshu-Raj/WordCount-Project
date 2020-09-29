@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>COUNT</title>
+    <style media="screen">
+      body{
+        background-color: #2FD9F8;
+      }
+      h2{
+        color : #116509;
+        font-size: 25px;
+      }
+      hr{
+        color: black;
+      }
+      input{
+        background-color: #DAF7A6 ;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>RESULT PAGE</h1>
+    <hr>
+    <form action="{% url 'home' %}">
+      <input type="submit" value="Home">
+    </form>
+    <hr>
+    <h2>Your entered text contains : {{ totalWords }} words in total!!</h2>
+    <h2>Your entered text contains : {{ count }} different words!!</h2><br>
+    <h3>You entered : </h3>
+    <!--use of for loop in html -->
+    <p>
+      {% for x,c in words%}
+        {{x}} : {{c}} times<br>
+      {% endfor%}
+    </p>
+  </body>
+</html>
